@@ -67,6 +67,7 @@
      <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARUtilityFunctions.cs" />
      <Compile Include="Assets\ARToolKit5-Unity\Scripts\PluginFunctions.cs" />
      <Compile Include="Assets\New Folder\SetRenderQueue.cs" />
+     <Compile Include="Assets\Scripts\Movimiento.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\ARToolKit5-Unity\CHANGELOG.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.kanji.txt" />
