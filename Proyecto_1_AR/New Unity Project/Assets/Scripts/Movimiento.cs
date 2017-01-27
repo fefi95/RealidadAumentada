@@ -7,10 +7,12 @@ public class Movimiento : MonoBehaviour {
     private float y;
     private float z;
     private Vector3 vectorMov;
+    private float grav;
     void Start()
     {
         camara = GameObject.Find("Camera");
         RigidBodyPelota = GetComponent<Rigidbody>();
+        grav = 4; 
     }
     void Update()
     {
@@ -73,6 +75,6 @@ public class Movimiento : MonoBehaviour {
         //vectorMov = new Vector3(x,0,z);
         //RigidBodyPelota.velocity = vectorMov;
         //Physics.gravity = new Vector3(camara.transform.eulerAngles.z,camara.transform.eulerAngles.y,-camara.transform.eulerAngles.x);
-        Physics.gravity = new Vector3(x,y,-z);
+        Physics.gravity = new Vector3(x,y,(-z));
     }
 }
