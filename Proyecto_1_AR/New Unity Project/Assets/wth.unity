@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 131873313}
   - component: {fileID: 131873314}
   m_Layer: 8
-  m_Name: GameObject (2)
+  m_Name: CaraDeAgua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 433756070}
   - component: {fileID: 433756075}
   m_Layer: 10
-  m_Name: Sphere
+  m_Name: Pelota
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,6 +627,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d1f110d049d365b4ea6db9f6fbac03c3, type: 2}
+    - target: {fileID: 100000, guid: 3e18477fde420764297195643df64064, type: 3}
+      propertyPath: m_Name
+      value: ParedesInternas
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e18477fde420764297195643df64064, type: 3}
   m_IsPrefabParent: 0
@@ -707,7 +711,7 @@ GameObject:
   - component: {fileID: 1200989783}
   - component: {fileID: 1200989782}
   m_Layer: 8
-  m_Name: GameObject (1)
+  m_Name: Origen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -836,7 +840,7 @@ GameObject:
   - component: {fileID: 1531027827}
   - component: {fileID: 1531027830}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Controlador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1166,6 +1170,10 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d20ac4f853a078a448337948a4980a62, type: 3}
+      propertyPath: m_Name
+      value: Mascara
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d20ac4f853a078a448337948a4980a62, type: 3}
   m_IsPrefabParent: 0
@@ -1242,7 +1250,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: d1f110d049d365b4ea6db9f6fbac03c3, type: 2}
     - target: {fileID: 100000, guid: 3e18477fde420764297195643df64064, type: 3}
       propertyPath: m_Name
-      value: habitacion 1 (1)
+      value: Pared Externa
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e18477fde420764297195643df64064, type: 3}
