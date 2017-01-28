@@ -67,6 +67,7 @@
      <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARUtilityFunctions.cs" />
      <Compile Include="Assets\ARToolKit5-Unity\Scripts\PluginFunctions.cs" />
      <Compile Include="Assets\New Folder\SetRenderQueue.cs" />
+     <Compile Include="Assets\Scripts\Huecos.cs" />
      <Compile Include="Assets\Scripts\Movimiento.cs" />
      <Compile Include="Assets\Scripts\controladorJuego.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
@@ -76,9 +77,6 @@
      <None Include="Assets\Materials\DepthMask.shader" />
      <None Include="Assets\ARToolKit5-Unity\Resources\Shaders\Mask.shader" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.hiro.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -93,9 +91,6 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>

@@ -19,10 +19,10 @@ public class Movimiento : MonoBehaviour {
         if ((camara.transform.eulerAngles.z > 0)&&(camara.transform.eulerAngles.z <= 45)){
             x = (camara.transform.eulerAngles.z)/(45);
             y = -(1 - x);
-            if ((camara.transform.eulerAngles.x > 0)&&(camara.transform.eulerAngles.x <= 45)){
+            if ((camara.transform.eulerAngles.x > 0)&&(camara.transform.eulerAngles.x <= 90)){
                 z = (camara.transform.eulerAngles.x)/(45);
             }
-            else if ((camara.transform.eulerAngles.x > 315)&&(camara.transform.eulerAngles.x <= 360)){
+            else if ((camara.transform.eulerAngles.x > 270)&&(camara.transform.eulerAngles.x <= 360)){
                 z = (camara.transform.eulerAngles.x - 360)/(45);
             }
         }
@@ -32,22 +32,20 @@ public class Movimiento : MonoBehaviour {
             if ((camara.transform.eulerAngles.y > 0)&&(camara.transform.eulerAngles.y <= 45)){
                 z = (camara.transform.eulerAngles.y)/(45);
             }
-            else if ((camara.transform.eulerAngles.y > 315)&&(camara.transform.eulerAngles.y <= 360)){
+            else if ((camara.transform.eulerAngles.y > 270)&&(camara.transform.eulerAngles.y <= 360)){
                 z = (camara.transform.eulerAngles.y - 360)/(45);
 
             }
         }
         else if ((camara.transform.eulerAngles.z > 135)&&(camara.transform.eulerAngles.z <= 225)){
             x = -(camara.transform.eulerAngles.z - 180)/(45);
-            Debug.Log(camara.transform.eulerAngles.x);
             y = (1 - x);
             if ((camara.transform.eulerAngles.x > 0)&&(camara.transform.eulerAngles.x <= 45)){
                 z = -(camara.transform.eulerAngles.x)/(45);
             }
-            else if ((camara.transform.eulerAngles.x > 315)&&(camara.transform.eulerAngles.x <= 360)){
+            else if ((camara.transform.eulerAngles.x > 270)&&(camara.transform.eulerAngles.x <= 360)){
                 z = -(camara.transform.eulerAngles.x - 360)/(45);
             }
-            Debug.Log(z);
         }
         else if ((camara.transform.eulerAngles.z > 225)&&(camara.transform.eulerAngles.z <= 315)){
             y = -(camara.transform.eulerAngles.z - 270)/(45);
@@ -55,7 +53,7 @@ public class Movimiento : MonoBehaviour {
             if ((camara.transform.eulerAngles.y > 0)&&(camara.transform.eulerAngles.y <= 45)){
                 z = -(camara.transform.eulerAngles.y)/(45);
             }
-            else if ((camara.transform.eulerAngles.y > 315)&&(camara.transform.eulerAngles.y <= 360)){
+            else if ((camara.transform.eulerAngles.y > 270)&&(camara.transform.eulerAngles.y <= 360)){
                 z = -(camara.transform.eulerAngles.y - 360)/(45);
             }
         }
@@ -65,7 +63,7 @@ public class Movimiento : MonoBehaviour {
             if ((camara.transform.eulerAngles.x > 0)&&(camara.transform.eulerAngles.x <= 45)){
                 z = (camara.transform.eulerAngles.x)/(45);
             }
-            else if ((camara.transform.eulerAngles.x > 315)&&(camara.transform.eulerAngles.x <= 360)){
+            else if ((camara.transform.eulerAngles.x > 270)&&(camara.transform.eulerAngles.x <= 360)){
                 z = -(camara.transform.eulerAngles.x - 315)/(45);
             }
 
