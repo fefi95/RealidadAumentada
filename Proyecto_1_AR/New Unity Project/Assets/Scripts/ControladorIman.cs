@@ -4,26 +4,25 @@ using UnityEngine;
 
 public class ControladorIman : MonoBehaviour {
 
-    public LayerMask m_MagneticLayers;
-    public Vector3 m_Position;
-    public float m_Radius;
-    public float m_Force;
+    public LayerMask magneticLayers;
+    public Vector3 position;
+    public float radius;
+    public float force;
 
     void FixedUpdate()
     {
         Collider[] colliders;
         Rigidbody rigidbody;
 
-        colliders = Physics.OverlapSphere(transform.position + m_Position, m_Radius, m_MagneticLayers);
+        colliders = Physics.OverlapSphere(transform.position + position, radius, magneticLayers);
         print(colliders.Length);
         foreach (Collider collider in colliders)
         {
-            print("holis!");
             rigidbody = (Rigidbody)collider.gameObject.GetComponent(typeof(Rigidbody));
             if (rigidbody != null)
             {
                 print("collide:" + rigidbody.name);
-                rigidbody.AddExplosionForce(m_Force * -1, transform.position + m_Position, m_Radius);
+                rigidbody.AddExplosionForce(force * -1, transform.position + position, radius);
             }
         }
     }
@@ -31,6 +30,6 @@ public class ControladorIman : MonoBehaviour {
     void OnDrawGizmosSelected() {
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position + m_Position, m_Radius);
+        Gizmos.DrawWireSphere(transform.position + position, radius);
     }
 }
