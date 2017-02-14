@@ -18,11 +18,14 @@ public class Huecos : MonoBehaviour {
     {
         caraActual = Control.caraActiva;
         if (caraActual == CaraHogar){
-            if (caraActual == 1){
+            if (CaraHogar == 1){
                 pelota = GameObject.Find("Origen/CaraDeAgua/Pelota");
             }
-            else if (caraActual == 2){
+            else if (CaraHogar == 2){
                 pelota = GameObject.Find("Origen/CaraDeCosa/Pelota");
+            } 
+            else if (CaraHogar == 3){
+                pelota = GameObject.Find("Origen/CaraTrueno/Pelota");
             } 
         }
         if(col.gameObject == pelota)
@@ -42,6 +45,16 @@ public class Huecos : MonoBehaviour {
                 nuevaPelota = Instantiate(PelotaPrefab, new Vector3(0, 0, 0),Quaternion.identity);
                 nuevaPelota.name = "Pelota";
                 nuevaPelota.transform.parent = GameObject.Find("Origen/CaraDeAgua").transform;
+                nuevaPelota.active = false;
+                Control.caraActiva = CaraAsignada;
+
+            }
+            else if (CaraAsignada == 3)
+            {
+                Destroy(col.gameObject);
+                nuevaPelota = Instantiate(PelotaPrefab, new Vector3(0, 0, 0),Quaternion.identity);
+                nuevaPelota.name = "Pelota";
+                nuevaPelota.transform.parent = GameObject.Find("Origen/CaraTrueno").transform;
                 nuevaPelota.active = false;
                 Control.caraActiva = CaraAsignada;
 

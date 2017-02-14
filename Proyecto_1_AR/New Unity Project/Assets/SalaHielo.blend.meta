@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: d2de05f02524f1442b589fba3ab97ecb
+timeCreated: 1487052045
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cube
+    100002: Cube_001
+    100004: Cube_002
+    100006: Cube_003
+    100008: NivelTrueno
+    100010: NivelTrueno_001
+    100012: //RootNode
+    100014: abdomen
+    100016: base
+    100018: boca1
+    100020: boca2
+    100022: boca3
+    100024: boca4
+    100026: boca5
+    100028: boton1
+    100030: boton2
+    100032: boton3
+    100034: cabeza
+    100036: Nariz
+    100038: Nieve
+    100040: Nieve_001
+    100042: Nieve_002
+    100044: Nieve_003
+    100046: ojo1
+    100048: ojo2
+    100050: PisoHielo
+    100052: Plane
+    100054: Plane_001
+    100056: Plane_002
+    100058: Sombrero
+    100060: TechoNieve
+    400000: Cube
+    400002: Cube_001
+    400004: Cube_002
+    400006: Cube_003
+    400008: NivelTrueno
+    400010: NivelTrueno_001
+    400012: //RootNode
+    400014: abdomen
+    400016: base
+    400018: boca1
+    400020: boca2
+    400022: boca3
+    400024: boca4
+    400026: boca5
+    400028: boton1
+    400030: boton2
+    400032: boton3
+    400034: cabeza
+    400036: Nariz
+    400038: Nieve
+    400040: Nieve_001
+    400042: Nieve_002
+    400044: Nieve_003
+    400046: ojo1
+    400048: ojo2
+    400050: PisoHielo
+    400052: Plane
+    400054: Plane_001
+    400056: Plane_002
+    400058: Sombrero
+    400060: TechoNieve
+    2300000: Cube
+    2300002: Cube_001
+    2300004: Cube_002
+    2300006: Cube_003
+    2300008: NivelTrueno
+    2300010: NivelTrueno_001
+    2300012: abdomen
+    2300014: base
+    2300016: boca1
+    2300018: boca2
+    2300020: boca3
+    2300022: boca4
+    2300024: boca5
+    2300026: boton1
+    2300028: boton2
+    2300030: boton3
+    2300032: cabeza
+    2300034: Nariz
+    2300036: Nieve
+    2300038: Nieve_001
+    2300040: Nieve_002
+    2300042: Nieve_003
+    2300044: ojo1
+    2300046: ojo2
+    2300048: PisoHielo
+    2300050: Plane
+    2300052: Plane_001
+    2300054: Plane_002
+    2300056: Sombrero
+    2300058: TechoNieve
+    3300000: Cube
+    3300002: Cube_001
+    3300004: Cube_002
+    3300006: Cube_003
+    3300008: NivelTrueno
+    3300010: NivelTrueno_001
+    3300012: abdomen
+    3300014: base
+    3300016: boca1
+    3300018: boca2
+    3300020: boca3
+    3300022: boca4
+    3300024: boca5
+    3300026: boton1
+    3300028: boton2
+    3300030: boton3
+    3300032: cabeza
+    3300034: Nariz
+    3300036: Nieve
+    3300038: Nieve_001
+    3300040: Nieve_002
+    3300042: Nieve_003
+    3300044: ojo1
+    3300046: ojo2
+    3300048: PisoHielo
+    3300050: Plane
+    3300052: Plane_001
+    3300054: Plane_002
+    3300056: Sombrero
+    3300058: TechoNieve
+    4300000: NivelTrueno
+    4300002: Cube
+    4300004: Cube_003
+    4300006: Cube_002
+    4300008: Cube_001
+    4300010: NivelTrueno_001
+    4300012: base
+    4300014: Nariz
+    4300016: Sombrero
+    4300018: ojo2
+    4300020: boca2
+    4300022: boca1
+    4300024: boca3
+    4300026: boca4
+    4300028: boca5
+    4300030: boton1
+    4300032: boton2
+    4300034: boton3
+    4300036: cabeza
+    4300038: ojo1
+    4300040: abdomen
+    4300042: Nieve
+    4300044: TechoNieve
+    4300046: Nieve_001
+    4300048: Nieve_002
+    4300050: Nieve_003
+    4300052: PisoHielo
+    4300054: Plane_002
+    4300056: Plane
+    4300058: Plane_001
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
