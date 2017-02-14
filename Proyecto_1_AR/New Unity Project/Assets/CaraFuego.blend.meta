@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: dd7ccecc74d282d4eb9ad6c3becea9e6
+timeCreated: 1486769873
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Empty_001
+    100004: Grid
+    100006: Grid_001
+    100008: Grid_002
+    100010: Grid_003
+    100012: Plane_001
+    100014: Plane_002
+    100016: Plane_003
+    100018: Plane_004
+    100020: Sphere
+    100022: Sphere_001
+    100024: Sphere_002
+    100026: Sphere_003
+    100028: Sphere_004
+    100030: Sphere_005
+    100032: Sphere_006
+    100034: Sphere_007
+    100036: Cone
+    100038: Plane_000
+    100040: Plane
+    100042: Cube
+    400000: //RootNode
+    400002: Empty_001
+    400004: Grid
+    400006: Grid_001
+    400008: Grid_002
+    400010: Grid_003
+    400012: Plane_001
+    400014: Plane_002
+    400016: Plane_003
+    400018: Plane_004
+    400020: Sphere
+    400022: Sphere_001
+    400024: Sphere_002
+    400026: Sphere_003
+    400028: Sphere_004
+    400030: Sphere_005
+    400032: Sphere_006
+    400034: Sphere_007
+    400036: Cone
+    400038: Plane_000
+    400040: Plane
+    400042: Cube
+    2300000: Grid
+    2300002: Grid_001
+    2300004: Grid_002
+    2300006: Grid_003
+    2300008: Plane_001
+    2300010: Plane_002
+    2300012: Plane_003
+    2300014: Plane_004
+    2300016: Sphere
+    2300018: Sphere_001
+    2300020: Sphere_002
+    2300022: Sphere_003
+    2300024: Sphere_004
+    2300026: Sphere_005
+    2300028: Sphere_006
+    2300030: Sphere_007
+    2300032: Cone
+    2300034: Plane_000
+    2300036: Plane
+    2300038: Cube
+    3300000: Grid
+    3300002: Grid_001
+    3300004: Grid_002
+    3300006: Grid_003
+    3300008: Plane_001
+    3300010: Plane_002
+    3300012: Plane_003
+    3300014: Plane_004
+    3300016: Sphere
+    3300018: Sphere_001
+    3300020: Sphere_002
+    3300022: Sphere_003
+    3300024: Sphere_004
+    3300026: Sphere_005
+    3300028: Sphere_006
+    3300030: Sphere_007
+    3300032: Cone
+    3300034: Plane_000
+    3300036: Plane
+    3300038: Cube
+    4300000: Grid_002
+    4300002: Grid_003
+    4300004: Grid
+    4300006: Grid_001
+    4300008: Plane_004
+    4300010: Plane_001
+    4300012: Plane_002
+    4300014: Plane_003
+    4300016: Sphere
+    4300018: Sphere_001
+    4300020: Sphere_002
+    4300022: Sphere_003
+    4300024: Sphere_004
+    4300026: Sphere_005
+    4300028: Sphere_006
+    4300030: Sphere_007
+    4300032: Cone
+    4300034: Plane_000
+    4300036: Plane
+    4300038: Cube
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
