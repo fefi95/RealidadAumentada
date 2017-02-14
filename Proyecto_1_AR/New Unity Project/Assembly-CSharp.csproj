@@ -69,6 +69,7 @@
      <Compile Include="Assets\New Folder\SetRenderQueue.cs" />
      <Compile Include="Assets\Scripts\Huecos.cs" />
      <Compile Include="Assets\Scripts\Movimiento.cs" />
+     <Compile Include="Assets\Scripts\TurnOffOn.cs" />
      <Compile Include="Assets\Scripts\controladorJuego.cs" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.water.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
