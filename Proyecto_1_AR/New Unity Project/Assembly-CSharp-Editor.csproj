@@ -66,7 +66,6 @@
      <None Include="Assets\Materials\CaraDeFuego\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort.shader" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.sand.txt" />
      <None Include="Assets\Materials\CaraDeFuego\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort_Transparent.shader" />
-     <None Include="Assets\Materials\CaraDeFuego\Lava_Flowing_Shader\ReadMe.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.kanji.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.thunder.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\Shaders\VideoPlaneNoLight.shader" />
