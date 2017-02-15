@@ -1246,7 +1246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58d9c6ed8256d4488b9a3d63bd329c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CaraAsignada: {fileID: 0}
+  CaraAsignada: {fileID: 971149166}
   CaraHogar: {fileID: 1243603670}
   pelota: {fileID: 971746409}
   PelotaPrefab: {fileID: 1282159820910078, guid: 1e77a3597815dbb47b239d9a1c18287e,
@@ -1357,8 +1357,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58d9c6ed8256d4488b9a3d63bd329c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CaraAsignada: {fileID: 0}
-  CaraHogar: {fileID: 0}
+  CaraAsignada: {fileID: 429462007}
+  CaraHogar: {fileID: 1891987972}
   pelota: {fileID: 971746409}
   PelotaPrefab: {fileID: 1282159820910078, guid: 1e77a3597815dbb47b239d9a1c18287e,
     type: 2}
@@ -3729,12 +3729,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58d9c6ed8256d4488b9a3d63bd329c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CaraAsignada: {fileID: 0}
-  CaraHogar: {fileID: 0}
-  pelota: {fileID: 0}
+  CaraAsignada: {fileID: 1943906832}
+  CaraHogar: {fileID: 429462007}
+  pelota: {fileID: 971746409}
   PelotaPrefab: {fileID: 1282159820910078, guid: 1e77a3597815dbb47b239d9a1c18287e,
     type: 2}
-  Control: {fileID: 0}
+  Control: {fileID: 1531027830}
 --- !u!64 &920453318
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4567,9 +4567,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58d9c6ed8256d4488b9a3d63bd329c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CaraAsignada: {fileID: 0}
+  CaraAsignada: {fileID: 429462007}
   CaraHogar: {fileID: 713573169}
-  pelota: {fileID: 0}
+  pelota: {fileID: 971746409}
   PelotaPrefab: {fileID: 1282159820910078, guid: 1e77a3597815dbb47b239d9a1c18287e,
     type: 2}
   Control: {fileID: 0}
@@ -7243,7 +7243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58d9c6ed8256d4488b9a3d63bd329c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CaraAsignada: {fileID: 0}
+  CaraAsignada: {fileID: 971149166}
   CaraHogar: {fileID: 1914411602762314, guid: 588a02d349fa27c45aef22a7db27de9d, type: 2}
   pelota: {fileID: 971746409}
   PelotaPrefab: {fileID: 1282159820910078, guid: 1e77a3597815dbb47b239d9a1c18287e,
@@ -7475,12 +7475,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58d9c6ed8256d4488b9a3d63bd329c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CaraAsignada: {fileID: 0}
-  CaraHogar: {fileID: 0}
-  pelota: {fileID: 0}
+  CaraAsignada: {fileID: 1891987972}
+  CaraHogar: {fileID: 429462007}
+  pelota: {fileID: 971746409}
   PelotaPrefab: {fileID: 1282159820910078, guid: 1e77a3597815dbb47b239d9a1c18287e,
     type: 2}
-  Control: {fileID: 0}
+  Control: {fileID: 1531027830}
 --- !u!64 &1593567424
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8553,12 +8553,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58d9c6ed8256d4488b9a3d63bd329c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CaraAsignada: {fileID: 0}
-  CaraHogar: {fileID: 0}
-  pelota: {fileID: 0}
+  CaraAsignada: {fileID: 713573169}
+  CaraHogar: {fileID: 429462007}
+  pelota: {fileID: 971746409}
   PelotaPrefab: {fileID: 1282159820910078, guid: 1e77a3597815dbb47b239d9a1c18287e,
     type: 2}
-  Control: {fileID: 0}
+  Control: {fileID: 1531027830}
 --- !u!64 &1804113293
 MeshCollider:
   m_ObjectHideFlags: 0
