@@ -79,7 +79,7 @@ public class Movimiento : MonoBehaviour {
     }
     void ReturnInBound(){
         if ((transform.position.x < -0.2)||(transform.position.x > 0.2)||(transform.position.y < -0.2)||(transform.position.y > 0.2)||(transform.position.z < -0.2)||(transform.position.z > 0.2)){
-            transform.position = new Vector3(0,0,0);
+            transform.position = new Vector3(0,0,0.01f);
         }
     }
 }
