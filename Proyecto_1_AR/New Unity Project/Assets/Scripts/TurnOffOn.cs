@@ -22,17 +22,17 @@ public class TurnOffOn : MonoBehaviour
         caraActual = Control.caraActiva;
         //if (caraActual == 3)
         //{
-            if ((frames >= 1) && (frames <= 30))
+            if ((frames >= 1) && (frames <= 90))
             {
-                GameObject.Find("Origen/CaraTrueno/Plane").active = true;
-            }
-            else if ((frames > 30) && (frames < 150))
-            {
-                //turn off lights
                 GameObject.Find("Origen/CaraTrueno/Plane").active = false;
             }
+            else if ((frames > 90) && (frames < 180))
+            {
+                //turn off lights
+                GameObject.Find("Origen/CaraTrueno/Plane").active = true;
+            }
             frames = frames + 1;
-            if (frames == 150)
+            if (frames == 180)
             {
                 frames = 1;
             }
