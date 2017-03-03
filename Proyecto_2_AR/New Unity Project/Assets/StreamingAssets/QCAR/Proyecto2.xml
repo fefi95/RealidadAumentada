@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
-  <Tracking>
-    <ImageTarget name="Ouroboros-0" size="1.000000 1.014656" />
-    <ImageTarget name="circulos" size="1.000000 0.744802" />
-    <ImageTarget name="Templo" size="1.000000 0.821667" />
-  </Tracking>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="Ouroboros-0" size="1.000000 1.014656"/>
+        <ImageTarget name="VaritaCubo.Left" size="0.200000 0.200000"/>
+        <ImageTarget name="VaritaCubo.Top" size="0.200000 0.200000"/>
+        <ImageTarget name="VaritaCubo.Front" size="0.200000 0.200000"/>
+        <ImageTarget name="VaritaCubo.Back" size="0.200000 0.200000"/>
+        <ImageTarget name="VaritaCubo.Right" size="0.200000 0.200000"/>
+        <ImageTarget name="VaritaCubo.Bottom" size="0.200000 0.200000"/>
+        <MultiTarget name="VaritaCubo">
+            <Part name="VaritaCubo.Left" translation="-0.10000000149011612 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="VaritaCubo.Right" translation="0.10000000149011612 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="VaritaCubo.Front" translation="0 0 0.10000000149011612" rotation="AD: 1 0 0 0"/>
+            <Part name="VaritaCubo.Back" translation="0 0 -0.10000000149011612" rotation="AD: 0 1 0 180"/>
+            <Part name="VaritaCubo.Top" translation="0 0.10000000149011612 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="VaritaCubo.Bottom" translation="0 -0.10000000149011612 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
 </QCARConfig>
