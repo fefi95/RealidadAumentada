@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
     <Tracking>
+        <CylinderTarget name="LataRefresco" sideLength="1.500000"/>
         <ImageTarget name="Ouroboros-0" size="1.000000 1.014656"/>
-        <ImageTarget name="VaritaCubo.Left" size="0.200000 0.200000"/>
-        <ImageTarget name="VaritaCubo.Top" size="0.200000 0.200000"/>
-        <ImageTarget name="VaritaCubo.Front" size="0.200000 0.200000"/>
-        <ImageTarget name="VaritaCubo.Back" size="0.200000 0.200000"/>
-        <ImageTarget name="VaritaCubo.Right" size="0.200000 0.200000"/>
         <ImageTarget name="VaritaCubo.Bottom" size="0.200000 0.200000"/>
+        <ImageTarget name="VaritaCubo.Right" size="0.200000 0.200000"/>
+        <ImageTarget name="VaritaCubo.Top" size="0.200000 0.200000"/>
+        <ImageTarget name="VaritaCubo.Back" size="0.200000 0.200000"/>
+        <ImageTarget name="VaritaCubo.Left" size="0.200000 0.200000"/>
+        <ImageTarget name="VaritaCubo.Front" size="0.200000 0.200000"/>
         <MultiTarget name="VaritaCubo">
             <Part name="VaritaCubo.Left" translation="-0.10000000149011612 0 0" rotation="AD: 0 1 0 -90"/>
             <Part name="VaritaCubo.Right" translation="0.10000000149011612 0 0" rotation="AD: 0 1 0 90"/>
