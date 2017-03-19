@@ -31,7 +31,6 @@ public class ComportamientoBala : MonoBehaviour {
             float nuevaPosicionx = VelocidadBala*(xDiferencia/DifTotal);
             float nuevaPosiciony = VelocidadBala*(yDiferencia/DifTotal);
             float nuevaPosicionz = VelocidadBala*(zDiferencia/DifTotal);
-            Debug.Log("B" + nuevaPosiciony);
 
             NuevaPosicion = new Vector3(xActual + (nuevaPosicionx), yActual + (nuevaPosiciony), zActual + (nuevaPosicionz));
             gameObject.transform.position = NuevaPosicion;

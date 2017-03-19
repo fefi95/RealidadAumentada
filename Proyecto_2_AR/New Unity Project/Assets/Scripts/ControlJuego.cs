@@ -5,6 +5,7 @@ public static class GlobalVariables{
     public static GameObject CentroDelMundo;
     public static bool JuegoEnCurso;
     public static int Salud;
+    public static bool MarcaEnMira;
 }
 
 public class ControlJuego : MonoBehaviour {

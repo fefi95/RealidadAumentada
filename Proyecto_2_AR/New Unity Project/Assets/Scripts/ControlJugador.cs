@@ -17,7 +17,9 @@ public class ControlJugador : MonoBehaviour {
     public bool EscudoArriba;
     private int TiempoEscudo;
     private int CoolDownEscudo;
-    private GameObject TextoBotonEscudo;
+    private int CoolDownPiedras;
+    public GameObject TextoBotonEscudo;
+    public GameObject TextoBotonPiedras;
 
 
 
@@ -30,7 +32,6 @@ public class ControlJugador : MonoBehaviour {
         HieloActivo = true;
         EscudoActivo = true;
         EscudoArriba = false;
-        TextoBotonEscudo = GameObject.Find("BotonEscudo/Text");
 
     }
     void Update()
@@ -51,6 +52,16 @@ public class ControlJugador : MonoBehaviour {
             if (CoolDownEscudo <= 0){
                 EscudoActivo = true;
                 TextoBotonEscudo.GetComponent<Text>().text = "Escudo";
+            }
+        }
+        if (PiedrasActivas == false){
+
+            TextoBotonPiedras.GetComponent<Text>().text = ""+CoolDownPiedras;
+
+            CoolDownPiedras = CoolDownPiedras - 1;
+            if (CoolDownPiedras <= 0){
+                PiedrasActivas = true;
+                TextoBotonPiedras.GetComponent<Text>().text = "Piedras";
             }
         }
     }
@@ -99,6 +110,10 @@ public class ControlJugador : MonoBehaviour {
             Instantiate(Piedra, posicion_spawn, Quaternion.identity);
             posicion_spawn = new Vector3(CentroDelMundo.transform.position.x - 1, 1 ,CentroDelMundo.transform.position.z - 1);
             Instantiate(Piedra, posicion_spawn, Quaternion.identity);
+
+            CoolDownPiedras = 60;
+            PiedrasActivas = false;
+
         }
     }
     public void Estaca(){

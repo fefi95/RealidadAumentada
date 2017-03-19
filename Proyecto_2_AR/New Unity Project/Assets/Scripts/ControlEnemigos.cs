@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 public class ControlEnemigos : MonoBehaviour {
     public GameObject Enemigo;
+    private GameObject EnemigoGenerado;
     private GameObject CentroDelMundo;
     private Vector3 posicion_spawn;
     public int i;
@@ -33,6 +34,7 @@ public class ControlEnemigos : MonoBehaviour {
     public void SpawnUnEnemigo(){
         //Esta Funcion spawnea enemigos cada 3 segundos, mientras juegoEnCurso sea true
         posicion_spawn = new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f));
-        Instantiate(Enemigo, posicion_spawn, Quaternion.identity);
+        EnemigoGenerado = Instantiate(Enemigo, posicion_spawn, Quaternion.identity);
+        EnemigoGenerado.transform.SetParent(gameObject.transform);
     }
 }

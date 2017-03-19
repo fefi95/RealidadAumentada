@@ -15,7 +15,7 @@ public class ComportamientoPiedra : MonoBehaviour {
     void Update()
     {
         if (GlobalVariables.JuegoEnCurso){
-            if (i > (5*30))
+            if (i > (60))
             {
                 Destroy(gameObject);
             }
