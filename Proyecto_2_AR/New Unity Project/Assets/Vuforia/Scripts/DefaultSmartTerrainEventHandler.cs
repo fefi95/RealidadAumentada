@@ -26,6 +26,7 @@ namespace Vuforia
         #region PUBLIC_MEMBERS
 
         public PropBehaviour PropTemplate;
+        public PropBehaviour PropTemplate2;
         public SurfaceBehaviour SurfaceTemplate;
 
         #endregion // PUBLIC_MEMBERS
@@ -65,7 +66,21 @@ namespace Vuforia
         public void OnPropCreated(Prop prop)
         {
             if (mReconstructionBehaviour)
-                mReconstructionBehaviour.AssociateProp(PropTemplate, prop);
+            {
+                Debug.Log("---Created Smart Terrain Prop");
+                //if (prop.LocalPosition.y < 0)
+                if (prop.BoundingBox.HalfExtents.y > 2)
+                {
+                    Debug.Log("PropTemplate");
+                    mReconstructionBehaviour.AssociateProp(PropTemplate, prop);
+                }
+                else
+                {
+                    Debug.Log("PropTemplate2");
+                    mReconstructionBehaviour.AssociateProp(PropTemplate2, prop);
+                }
+            }
+                
         }
 
         /// <summary>
