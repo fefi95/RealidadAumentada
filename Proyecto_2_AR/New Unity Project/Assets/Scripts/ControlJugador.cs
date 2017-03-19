@@ -3,28 +3,28 @@ using System.Collections;
 public class ControlJugador : MonoBehaviour {
     public GameObject Piedra;
     private GameObject CentroDelMundo;
-    private GameObject Centro;
+    private GameObject ControlEnemigos;
+    
     private Vector3 posicion_spawn;
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
+    public bool TruenoActivo;
+    public bool PiedrasActivas;
+    public bool HieloActivo;
+    public bool EscudoActivo;
+
 
     void Start()
     {
-        CentroDelMundo = GameObject.Find("CentroJuego");
+        ControlEnemigos = GameObject.Find("ControlDeEnemigos");
+        TruenoActivo = true;
+        PiedrasActivas = true;
+        HieloActivo = true;
+        EscudoActivo = true;
     }
     void Update()
     {
 
-    }
-    public GameObject BuscarCentro()
-    {
-        //FUNCION INCOMPLETA
-        //Si el centro del mundo es visible, entonces permite usar los poderes y devuelve el objeto
-        //Que representa al centro para que lo use
-        //Si no, devuelve null
-
-        CentroDelMundo = GameObject.Find("CentroJuego");
-        return CentroDelMundo;
     }
 
     public void matarEnemigo(GameObject Enemigo){
@@ -38,13 +38,11 @@ public class ControlJugador : MonoBehaviour {
         //Enemigos que estén a cierta distancia del "suelo"
         //Si no consigue al centro recibe null y no hace nada
 
-        Centro = BuscarCentro();
-        if (Centro == null){
-            Debug.Log("El mundo no es visible");
-        }
-        else{
+        if (TruenoActivo){
             Debug.Log("Lanzo truenos!");
+            ControlEnemigos.GetComponent<ControlEnemigos>().SpawnUnEnemigo();
         }
+
     }
     public void Piedras(){
         //FUNCION INCOMPLETA
@@ -52,31 +50,27 @@ public class ControlJugador : MonoBehaviour {
         //Sobre el terreno y mataran a todo enemigo que toquen
         //Si no consigue al centro recibe null y no hace nada
 
-        Centro = BuscarCentro();
-        if (Centro == null){
-            Debug.Log("El mundo no es visible");
-        }
-        else{
+        if (PiedrasActivas){
+            CentroDelMundo = GlobalVariables.CentroDelMundo;
             Debug.Log("Lanzo Piedras!");
-            posicion_spawn = new Vector3(Centro.transform.position.x + 1, 1 ,Centro.transform.position.z + 1);
+            posicion_spawn = new Vector3(CentroDelMundo.transform.position.x + 1, 1 ,CentroDelMundo.transform.position.z + 1);
             Instantiate(Piedra, posicion_spawn, Quaternion.identity);
-            posicion_spawn = new Vector3(Centro.transform.position.x + 1, 1 ,Centro.transform.position.z + 0);
+            posicion_spawn = new Vector3(CentroDelMundo.transform.position.x + 1, 1 ,CentroDelMundo.transform.position.z + 0);
             Instantiate(Piedra, posicion_spawn, Quaternion.identity);
-            posicion_spawn = new Vector3(Centro.transform.position.x + 1, 1 ,Centro.transform.position.z - 1);
+            posicion_spawn = new Vector3(CentroDelMundo.transform.position.x + 1, 1 ,CentroDelMundo.transform.position.z - 1);
             Instantiate(Piedra, posicion_spawn, Quaternion.identity);
-            posicion_spawn = new Vector3(Centro.transform.position.x + 0, 1 ,Centro.transform.position.z + 1);
+            posicion_spawn = new Vector3(CentroDelMundo.transform.position.x + 0, 1 ,CentroDelMundo.transform.position.z + 1);
             Instantiate(Piedra, posicion_spawn, Quaternion.identity);
-            posicion_spawn = new Vector3(Centro.transform.position.x + 0, 1 ,Centro.transform.position.z + 0);
+            posicion_spawn = new Vector3(CentroDelMundo.transform.position.x + 0, 1 ,CentroDelMundo.transform.position.z + 0);
             Instantiate(Piedra, posicion_spawn, Quaternion.identity);
-            posicion_spawn = new Vector3(Centro.transform.position.x + 0, 1 ,Centro.transform.position.z -1);
+            posicion_spawn = new Vector3(CentroDelMundo.transform.position.x + 0, 1 ,CentroDelMundo.transform.position.z -1);
             Instantiate(Piedra, posicion_spawn, Quaternion.identity);
-            posicion_spawn = new Vector3(Centro.transform.position.x - 1, 1 ,Centro.transform.position.z + 1);
+            posicion_spawn = new Vector3(CentroDelMundo.transform.position.x - 1, 1 ,CentroDelMundo.transform.position.z + 1);
             Instantiate(Piedra, posicion_spawn, Quaternion.identity);
-            posicion_spawn = new Vector3(Centro.transform.position.x - 1, 1 ,Centro.transform.position.z + 0);
+            posicion_spawn = new Vector3(CentroDelMundo.transform.position.x - 1, 1 ,CentroDelMundo.transform.position.z + 0);
             Instantiate(Piedra, posicion_spawn, Quaternion.identity);
-            posicion_spawn = new Vector3(Centro.transform.position.x - 1, 1 ,Centro.transform.position.z - 1);
+            posicion_spawn = new Vector3(CentroDelMundo.transform.position.x - 1, 1 ,CentroDelMundo.transform.position.z - 1);
             Instantiate(Piedra, posicion_spawn, Quaternion.identity);
-
         }
     }
     public void Estaca(){
@@ -85,11 +79,7 @@ public class ControlJugador : MonoBehaviour {
         //hacia el frente
         //Si no consigue al centro recibe null y no hace nada
 
-        Centro = BuscarCentro();
-        if (Centro == null){
-            Debug.Log("El mundo no es visible");
-        }
-        else{
+        if (HieloActivo){
             Debug.Log("Lanzo Hielo!");
             // Create the Bullet from the Bullet Prefab
             var bullet = (GameObject)Instantiate (
@@ -101,7 +91,7 @@ public class ControlJugador : MonoBehaviour {
             bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
 
             // Destroy the bullet after 2 seconds
-            Destroy(bullet, 2.0f);        
+            Destroy(bullet, 2.0f); 
         }
 
     }
@@ -110,13 +100,15 @@ public class ControlJugador : MonoBehaviour {
         //LLama a BuscarCentro, si consigue al centro entonces genera un escudo que evita que se pierda vida
         //Por un limite de tiempo
         //Si no consigue al centro recibe null y no hace nada
-        
-        Centro = BuscarCentro();
-        if (Centro == null){
-            Debug.Log("El mundo no es visible");
+        if (ControlEnemigos.GetComponent<ControlEnemigos>().Activo == false)
+        {
+            ControlEnemigos.GetComponent<ControlEnemigos>().Activo = true;
         }
-        else{
-            Debug.Log("Lanzo Escudo!");
+        else
+        {
+            if (TruenoActivo){
+                Debug.Log("Lanzo Escudo!");
+            }
         }
     }
 

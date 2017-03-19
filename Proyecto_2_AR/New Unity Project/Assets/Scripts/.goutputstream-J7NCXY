@@ -3,25 +3,35 @@ using System.Collections;
 public class ComportamientoPiedra : MonoBehaviour {
     private GameObject CentroDelMundo;
     private GameObject ControlJugador;
+    private GameObject ControlJuego;
     private GameObject Centro;
     private GameObject Camara;
     public int i;
+    public bool JuegoEnCurso;
 
     void Start()
     {
         i = 0;
         ControlJugador = GameObject.Find("ControlDelJugador");
+        ControlJuego = GameObject.Find("ControlJuego");
+        JuegoEnCurso = ControlJuego.GetComponent<ControlJuego>().JuegoEnCurso;
     }
     void Update()
     {
-        if (i > (5*30))
+        if (JuegoEnCurso == false)
         {
-            Destroy(gameObject);
         }
-        else
-        {
-            i = i +1;
+        else{
+            if (i > (5*30))
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                i = i +1;
+            }
         }
+
     }
 
     void OnCollisionEnter(Collision coll){
