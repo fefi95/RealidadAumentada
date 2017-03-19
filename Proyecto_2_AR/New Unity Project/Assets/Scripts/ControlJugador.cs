@@ -1,30 +1,58 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 public class ControlJugador : MonoBehaviour {
     public GameObject Piedra;
     private GameObject CentroDelMundo;
     private GameObject ControlEnemigos;
+    private GameObject Salud;
     
     private Vector3 posicion_spawn;
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
-    public bool TruenoActivo;
-    public bool PiedrasActivas;
-    public bool HieloActivo;
-    public bool EscudoActivo;
+    private bool TruenoActivo;
+    private bool PiedrasActivas;
+    private bool HieloActivo;
+    private bool EscudoActivo;
+    public bool EscudoArriba;
+    private int TiempoEscudo;
+    private int CoolDownEscudo;
+    private GameObject TextoBotonEscudo;
+
 
 
     void Start()
     {
+        Salud = GameObject.Find("Salud");
         ControlEnemigos = GameObject.Find("ControlDeEnemigos");
         TruenoActivo = true;
         PiedrasActivas = true;
         HieloActivo = true;
         EscudoActivo = true;
+        EscudoArriba = false;
+        TextoBotonEscudo = GameObject.Find("BotonEscudo/Text");
+
     }
     void Update()
     {
+        if (EscudoArriba){
+            TiempoEscudo = TiempoEscudo + 1;
+            if (TiempoEscudo >= 30)
+            {
+                TiempoEscudo = 0;
+                EscudoArriba = false;
+            }
+        }
+        if (EscudoActivo == false){
 
+            TextoBotonEscudo.GetComponent<Text>().text = ""+CoolDownEscudo;
+
+            CoolDownEscudo = CoolDownEscudo - 1;
+            if (CoolDownEscudo <= 0){
+                EscudoActivo = true;
+                TextoBotonEscudo.GetComponent<Text>().text = "Escudo";
+            }
+        }
     }
 
     public void matarEnemigo(GameObject Enemigo){
@@ -100,13 +128,17 @@ public class ControlJugador : MonoBehaviour {
         //LLama a BuscarCentro, si consigue al centro entonces genera un escudo que evita que se pierda vida
         //Por un limite de tiempo
         //Si no consigue al centro recibe null y no hace nada
-        if (ControlEnemigos.GetComponent<ControlEnemigos>().Activo == false)
+        if (GlobalVariables.JuegoEnCurso == false)
         {
-            ControlEnemigos.GetComponent<ControlEnemigos>().Activo = true;
+            GlobalVariables.JuegoEnCurso = true;
+            Salud.GetComponent<Text>().text = "Salud: " + GlobalVariables.Salud;
         }
         else
         {
-            if (TruenoActivo){
+            if (EscudoActivo){
+                CoolDownEscudo = 60;
+                EscudoArriba = true;
+                EscudoActivo = false;
                 Debug.Log("Lanzo Escudo!");
             }
         }

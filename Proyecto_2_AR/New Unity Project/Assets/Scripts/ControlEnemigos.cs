@@ -5,12 +5,10 @@ public class ControlEnemigos : MonoBehaviour {
     private GameObject CentroDelMundo;
     private Vector3 posicion_spawn;
     public int i;
-    public bool Activo;
 
     void Start()
     {
         CentroDelMundo = GlobalVariables.CentroDelMundo;
-        Activo = false;
         i = 0;
 
     }
@@ -21,7 +19,7 @@ public class ControlEnemigos : MonoBehaviour {
     }
     void SpawnEnemigos(){
         //Esta Funcion spawnea enemigos cada 3 segundos, mientras juegoEnCurso sea true
-        if (Activo)
+        if (GlobalVariables.JuegoEnCurso)
         {
             if (i <= (30*3)){
                 i = i+1;
