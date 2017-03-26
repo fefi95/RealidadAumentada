@@ -1,7 +1,7 @@
 /*==============================================================================
 Copyright (c) 2013-2014 Qualcomm Connected Experiences, Inc.
 All Rights Reserved.
-Confidential and Proprietary - Protected under copyright and other laws.
+Confidential and Proprietary - Qualcomm Connected Experiences, Inc.
 ==============================================================================*/
 
 
@@ -26,7 +26,6 @@ namespace Vuforia
         #region PUBLIC_MEMBERS
 
         public PropBehaviour PropTemplate;
-        public PropBehaviour PropTemplate2;
         public SurfaceBehaviour SurfaceTemplate;
 
         #endregion // PUBLIC_MEMBERS
@@ -67,20 +66,13 @@ namespace Vuforia
         {
             if (mReconstructionBehaviour)
             {
-                Debug.Log("---Created Smart Terrain Prop");
-                //if (prop.LocalPosition.y < 0)
-                if (prop.BoundingBox.HalfExtents.y > 2)
+                mReconstructionBehaviour.AssociateProp(PropTemplate, prop);
+                PropAbstractBehaviour behaviour;
+                if (mReconstructionBehaviour.TryGetPropBehaviour(prop, out behaviour))
                 {
-                    Debug.Log("PropTemplate");
-                    mReconstructionBehaviour.AssociateProp(PropTemplate, prop);
-                }
-                else
-                {
-                    Debug.Log("PropTemplate2");
-                    mReconstructionBehaviour.AssociateProp(PropTemplate2, prop);
+                    behaviour.gameObject.name = "Prop " + prop.ID;
                 }
             }
-                
         }
 
         /// <summary>
@@ -89,12 +81,16 @@ namespace Vuforia
         public void OnSurfaceCreated(Surface surface)
         {
             if (mReconstructionBehaviour)
+            {
                 mReconstructionBehaviour.AssociateSurface(SurfaceTemplate, surface);
+                SurfaceAbstractBehaviour behaviour;
+                if (mReconstructionBehaviour.TryGetSurfaceBehaviour(surface, out behaviour))
+                {
+                    behaviour.gameObject.name = "Surface " + surface.ID;
+                }
+            }
         }
 
         #endregion // RECONSTRUCTION_CALLBACKS
     }
 }
-
-
-
