@@ -72,6 +72,7 @@ namespace Vuforia
                 {
                     behaviour.gameObject.name = "Prop " + prop.ID;
                 }
+                
             }
         }
 
