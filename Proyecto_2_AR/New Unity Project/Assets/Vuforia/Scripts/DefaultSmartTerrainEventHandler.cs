@@ -1,7 +1,7 @@
 /*==============================================================================
 Copyright (c) 2013-2014 Qualcomm Connected Experiences, Inc.
 All Rights Reserved.
-Confidential and Proprietary - Qualcomm Connected Experiences, Inc.
+Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
 
@@ -65,15 +65,7 @@ namespace Vuforia
         public void OnPropCreated(Prop prop)
         {
             if (mReconstructionBehaviour)
-            {
                 mReconstructionBehaviour.AssociateProp(PropTemplate, prop);
-                PropAbstractBehaviour behaviour;
-                if (mReconstructionBehaviour.TryGetPropBehaviour(prop, out behaviour))
-                {
-                    behaviour.gameObject.name = "Prop " + prop.ID;
-                }
-                
-            }
         }
 
         /// <summary>
@@ -82,16 +74,12 @@ namespace Vuforia
         public void OnSurfaceCreated(Surface surface)
         {
             if (mReconstructionBehaviour)
-            {
                 mReconstructionBehaviour.AssociateSurface(SurfaceTemplate, surface);
-                SurfaceAbstractBehaviour behaviour;
-                if (mReconstructionBehaviour.TryGetSurfaceBehaviour(surface, out behaviour))
-                {
-                    behaviour.gameObject.name = "Surface " + surface.ID;
-                }
-            }
         }
 
         #endregion // RECONSTRUCTION_CALLBACKS
     }
 }
+
+
+

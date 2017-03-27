@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\ControlJugador.cs" />
      <Compile Include="Assets\Scripts\DetectorDeMarca.cs" />
      <Compile Include="Assets\Scripts\InteligenciaEnemigo.cs" />
+     <Compile Include="Assets\Scripts\SmartTerrainEventHandler.cs" />
      <Compile Include="Assets\Scripts\SonidoGolpe.cs" />
      <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CloudRecoBehaviour.cs" />

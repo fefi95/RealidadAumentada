@@ -86,7 +86,7 @@ namespace Vuforia
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
             GlobalVariables.MarcaEnMira = true;
-            Contenido.SetActive(true);
+            //Contenido.SetActive(true);
         }
 
 
@@ -110,7 +110,7 @@ namespace Vuforia
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
             GlobalVariables.MarcaEnMira = false;
             Contenido.SetActive(false);
-
+            GlobalVariables.JuegoEnCurso = false;
         }
 
         #endregion // PRIVATE_METHODS

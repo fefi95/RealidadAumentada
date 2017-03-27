@@ -3,10 +3,12 @@ using System.Collections;
 using UnityEngine.UI;
 public class ComportamientoDelGUI : MonoBehaviour {
     private bool botones;
+    private GameObject Contenido;
     public GameObject BotonTrueno;
     public GameObject BotonPiedras;
     public GameObject BotonHielo;
     public GameObject BotonEscudo;
+    public GameObject BotonSmartTerrain;
     public GameObject Salud;
     public GameObject TextoMarcaPerdida;
 
@@ -14,34 +16,52 @@ public class ComportamientoDelGUI : MonoBehaviour {
 
     void Start()
     {
+        Contenido = GameObject.Find("Contenido");
         botones = false;
     }
     void Update()
     {
-        if (GlobalVariables.MarcaEnMira == false)
+        
+        if (GlobalVariables.MarcaEnMira)
         {
-            if (botones == true){
+            if (botones == false)
+            {
+                print("Estado Smart Terrain"+ GlobalVariables.ActiveSmartTerrain);
+                if (GlobalVariables.ActiveSmartTerrain)
+                {
+                    Contenido.SetActive(true);
+                    BotonTrueno.SetActive(true);
+                    BotonPiedras.SetActive(true);
+                    BotonHielo.SetActive(true);
+                    BotonEscudo.SetActive(true);
+                    BotonSmartTerrain.SetActive(false);
+                    Salud.SetActive(true);
+                    Debug.Log("pon los botones");
+                    botones = true;
+                    GlobalVariables.JuegoEnCurso = true;
+                }
+                else
+                {
+                    BotonSmartTerrain.SetActive(true);
+                }
+                TextoMarcaPerdida.SetActive(false);
+            }
+                
+        }
+        else
+        {
+            if (botones == true)
+            {
                 BotonTrueno.SetActive(false);
                 BotonPiedras.SetActive(false);
                 BotonHielo.SetActive(false);
                 BotonEscudo.SetActive(false);
+                BotonSmartTerrain.SetActive(false);
                 Salud.SetActive(false);
-                TextoMarcaPerdida.SetActive(true);
                 botones = false;
+                GlobalVariables.JuegoEnCurso = false;
             }
-        }
-        else
-        {
-            if (botones == false){
-                BotonTrueno.SetActive(true);
-                BotonPiedras.SetActive(true);
-                BotonHielo.SetActive(true);
-                BotonEscudo.SetActive(true);
-                Salud.SetActive(true);
-                TextoMarcaPerdida.SetActive(false);
-                Debug.Log("pon los botones");
-                botones = true;
-            }
+            TextoMarcaPerdida.SetActive(true);
         }
     }
 }

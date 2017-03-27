@@ -6,6 +6,7 @@ public static class GlobalVariables{
     public static bool JuegoEnCurso;
     public static int Salud;
     public static bool MarcaEnMira;
+    public static bool ActiveSmartTerrain;
 }
 
 public class ControlJuego : MonoBehaviour {
@@ -14,7 +15,7 @@ public class ControlJuego : MonoBehaviour {
 
     void Start()
     {
-        GlobalVariables.JuegoEnCurso = true;
+        //GlobalVariables.JuegoEnCurso = true;
         BuscarCentro();
         GlobalVariables.Salud = 10;
         //JuegoEnCurso = DeterminarJuegoActivo();
