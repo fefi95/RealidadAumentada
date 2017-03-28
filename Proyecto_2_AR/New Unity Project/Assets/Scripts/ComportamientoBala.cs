@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 public class ComportamientoBala : MonoBehaviour {
+    public GameObject GameOver;
     private Vector3 PosiciónJugador;
     private Vector3 NuevaPosicion;
     private float VelocidadBala;
@@ -53,8 +54,8 @@ public class ComportamientoBala : MonoBehaviour {
                 if (GlobalVariables.Salud <= 0)
                 {
                     GlobalVariables.JuegoEnCurso = false;
-                    GlobalVariables.Salud = 10;
                 }
+              
             }
             Destroy(gameObject);
 

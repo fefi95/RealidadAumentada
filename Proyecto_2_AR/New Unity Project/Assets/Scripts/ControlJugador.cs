@@ -145,7 +145,8 @@ public class ControlJugador : MonoBehaviour {
         //Si no consigue al centro recibe null y no hace nada
         if (GlobalVariables.JuegoEnCurso == false)
         {
-            //GlobalVariables.JuegoEnCurso = true;
+            GlobalVariables.JuegoEnCurso = true;
+            GlobalVariables.Salud = 10;
             print("saludddddd" + Salud);
             Salud.GetComponent<Text>().text = "Salud: " + GlobalVariables.Salud;
         }
