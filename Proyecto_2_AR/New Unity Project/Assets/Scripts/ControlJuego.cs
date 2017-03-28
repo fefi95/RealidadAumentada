@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public static class GlobalVariables{
     public static GameObject CentroDelMundo;
@@ -13,12 +14,15 @@ public static class GlobalVariables{
 public class ControlJuego : MonoBehaviour {
 
     public GameObject GameOver;
+    private GameObject Salud;
+   
 
     void Start()
     {
         //GlobalVariables.JuegoEnCurso = true;
         BuscarCentro();
         GlobalVariables.Salud = 10;
+        Salud = GameObject.Find("Salud");
         //JuegoEnCurso = DeterminarJuegoActivo();
     }
     void Update()
@@ -38,4 +42,13 @@ public class ControlJuego : MonoBehaviour {
     {
         GlobalVariables.CentroDelMundo = GameObject.Find("CentroJuego");
     }
+
+    public void ReiniciarJuego()
+    {
+        GlobalVariables.JuegoEnCurso = true;
+        GlobalVariables.Salud = 10;
+        print("saludddddd" + Salud);
+        Salud.GetComponent<Text>().text = "Salud: " + GlobalVariables.Salud;
+    }
+    
 }

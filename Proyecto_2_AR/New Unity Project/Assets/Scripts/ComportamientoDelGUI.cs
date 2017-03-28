@@ -21,12 +21,12 @@ public class ComportamientoDelGUI : MonoBehaviour {
     }
     void Update()
     {
-        
+
         if (GlobalVariables.MarcaEnMira)
         {
             if (botones == false)
             {
-                print("Estado Smart Terrain"+ GlobalVariables.ActiveSmartTerrain);
+                print("Estado Smart Terrain" + GlobalVariables.ActiveSmartTerrain);
                 if (GlobalVariables.ActiveSmartTerrain)
                 {
                     Contenido.SetActive(true);
@@ -38,7 +38,10 @@ public class ComportamientoDelGUI : MonoBehaviour {
                     Salud.SetActive(true);
                     Debug.Log("pon los botones");
                     botones = true;
-                    GlobalVariables.JuegoEnCurso = true;
+                    if (GlobalVariables.Salud > 0)
+                    {
+                        GlobalVariables.JuegoEnCurso = true;
+                    }
                 }
                 else
                 {
@@ -46,7 +49,7 @@ public class ComportamientoDelGUI : MonoBehaviour {
                 }
                 TextoMarcaPerdida.SetActive(false);
             }
-                
+
         }
         else
         {
@@ -63,5 +66,16 @@ public class ComportamientoDelGUI : MonoBehaviour {
             }
             TextoMarcaPerdida.SetActive(true);
         }
+        if (!GlobalVariables.JuegoEnCurso)
+        {
+            BotonTrueno.SetActive(false);
+            BotonPiedras.SetActive(false);
+            BotonHielo.SetActive(false);
+            BotonEscudo.SetActive(false);
+            //BotonSmartTerrain.SetActive(false);
+            Salud.SetActive(false);
+            botones = false;
+        }
     }
+    
 }
