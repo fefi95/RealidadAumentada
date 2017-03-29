@@ -79,7 +79,17 @@ public class ControlJugador : MonoBehaviour {
 
         if (TruenoActivo){
             Debug.Log("Lanzo truenos!");
-            ControlEnemigos.GetComponent<ControlEnemigos>().SpawnUnEnemigo();
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            foreach (Transform enemigo in ControlEnemigos.transform)
+            {
+                print("enemigo!" + enemigo.localPosition);
+                if (enemigo.localPosition.z > 1)
+                {
+                    Destroy(enemigo);
+                }
+            }
+            //ControlEnemigos.GetComponent<ControlEnemigos>().SpawnUnEnemigo();
         }
 
     }
