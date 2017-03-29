@@ -102,6 +102,7 @@ public class SmartTerrainEventHandler : MonoBehaviour
                 Transform Mountain = behaviour.transform.FindChild("mountain");
                 //Mountain.Translate(new Vector3(prop.LocalPosition.x/2, 0, prop.LocalPosition.z/2));
                 Mountain.position = new Vector3(prop.BoundingBox.Center.x, 0, prop.BoundingBox.Center.z);
+                //Mountain.position = new Vector3(prop.BoundingBox.Center.x, prop.BoundingBox.Center.y, 0);
                 Mountain.localScale = collider.bounds.size;
             }
 
