@@ -1621,7 +1621,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1955270173729232}
-  m_Mesh: {fileID: 4300000, guid: 3e18477fde420764297195643df64064, type: 3}
+  m_Mesh: {fileID: 4300048, guid: 01b19f1894c9fc24a8c23c692e1bee77, type: 3}
 --- !u!33 &33534040389965620
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -2070,8 +2070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58d9c6ed8256d4488b9a3d63bd329c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CaraAsignada: 0
-  CaraHogar: 0
+  CaraAsignada: {fileID: 0}
+  CaraHogar: {fileID: 0}
   pelota: {fileID: 0}
   PelotaPrefab: {fileID: 0}
   Control: {fileID: 0}
@@ -2086,8 +2086,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58d9c6ed8256d4488b9a3d63bd329c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CaraAsignada: 0
-  CaraHogar: 0
+  CaraAsignada: {fileID: 0}
+  CaraHogar: {fileID: 0}
   pelota: {fileID: 0}
   PelotaPrefab: {fileID: 0}
   Control: {fileID: 0}
@@ -2102,8 +2102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58d9c6ed8256d4488b9a3d63bd329c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CaraAsignada: 0
-  CaraHogar: 0
+  CaraAsignada: {fileID: 0}
+  CaraHogar: {fileID: 0}
   pelota: {fileID: 0}
   PelotaPrefab: {fileID: 0}
   Control: {fileID: 0}

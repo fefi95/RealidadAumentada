@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class TurnOffOn : MonoBehaviour
 {
+    public float lightUpTime;
+    public float lightDownTime;
+    public float cycleTime;
+    public Light lighting;
     public controladorJuego Control;
     private int caraActual;
     public int frames;
@@ -22,20 +26,26 @@ public class TurnOffOn : MonoBehaviour
         caraActual = Control.caraActiva;
         //if (caraActual == 3)
         //{
-            if ((frames >= 1) && (frames <= 90))
-            {
-                GameObject.Find("Origen/CaraTrueno/Plane").active = false;
-            }
-            else if ((frames > 90) && (frames < 180))
-            {
-                //turn off lights
-                GameObject.Find("Origen/CaraTrueno/Plane").active = true;
-            }
-            frames = frames + 1;
-            if (frames == 180)
-            {
-                frames = 1;
-            }
+        if ((frames >= 1) && (frames <= lightUpTime))
+        {
+            float l_lightIntensity = frames / lightUpTime;
+            lighting.intensity = Mathf.Lerp(0, 8, l_lightIntensity);
+        }
+        else if ((frames > lightUpTime) && (frames < (lightDownTime+ lightUpTime)))
+        {
+            float l_lightIntensity = (frames- lightUpTime) / (lightDownTime - lightUpTime);
+            lighting.intensity = Mathf.Lerp(8, 0, l_lightIntensity);
+        }
+        else
+        {
+            //turn off lights
+            lighting.intensity = 0;
+        }
+        frames = frames + 1;
+        if (frames >= cycleTime)
+        {
+            frames = 1;
+        }
 
        // }
 

@@ -15,7 +15,6 @@ public class ControladorIman : MonoBehaviour {
         Rigidbody rigidbody;
 
         colliders = Physics.OverlapSphere(transform.position + position, radius, magneticLayers);
-        print(colliders.Length);
         foreach (Collider collider in colliders)
         {
             rigidbody = (Rigidbody)collider.gameObject.GetComponent(typeof(Rigidbody));
