@@ -1,0 +1,262 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA NVS 315 (ID=0x107c)
+    Vendor:   NVIDIA
+    VRAM:     969 MB
+    Driver:   23.21.13.9256
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.331 seconds
+Platform assembly: C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Aleni\RealidadAumentada\Proyecto_1_AR\Ejecutable\EjecutableActualizado\CuboOfDoom_Data\Managed\System.dll (this message is harmless)
+desktop: 1280x1024 60Hz; virtual: 1280x1024 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.667200 ms
+ARController: ARToolKit version 5.3.2 initialised.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Loading single AR marker from buffer, width 80.000000.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Added marker (UID=0), total markers loaded: 1.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Loading single AR marker from buffer, width 80.000000.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Added marker (UID=1), total markers loaded: 2.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Loading single AR marker from buffer, width 80.000000.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Added marker (UID=2), total markers loaded: 3.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Loading single AR marker from buffer, width 80.000000.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Added marker (UID=3), total markers loaded: 4.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Loading single AR marker from buffer, width 80.000000.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Added marker (UID=4), total markers loaded: 5.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Loading single AR marker from buffer, width 80.000000.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Added marker (UID=5), total markers loaded: 6.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Loading single AR marker from buffer, width 80.000000.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Added marker (UID=6), total markers loaded: 7.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController: Starting AR.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController: Render device: Direct3D 11.0 [level 11.0], using Unity texturing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController: Starting ARToolKit video with vconf '-showDialog -flipV'.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]ARController::startRunning(): called, start running
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Setting video configuration '-showDialog -flipV'.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Settting camera parameters buffer: 176 bytes.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Opening ARToolKit video using configuration '-showDialog -flipV'.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Opened ARToolKit video 640x480@3Bpp (AR_PIXEL_FORMAT_BGR).
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Camera parameters loaded from buffer.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController: Setting ARToolKit tracking settings.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+CaraTrueno (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+CaraDeFuego (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+CaraDeIman (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+CaraDeAgua (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AROrigin: Found 7 markers eligible to become base marker.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+CaraDeAgua (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+CaraDeFuego (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController: UpdateAR: Waiting for ARToolKit video.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2958 -> priority: 1 
+ARController: UpdateAR: ARToolKit video is running. Configuring Unity scene for video.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController: Video 640x480@3Bpp (AR_PIXEL_FORMAT_BGR)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController: Projection matrix: [
+2.12299	0.00000	0.00376	0.00000
+0.00000	2.66294	-0.00668	0.00000
+0.00000	0.00000	-1.00401	-0.02004
+0.00000	0.00000	-1.00000	0.00000]
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController: Video size 640x480 will use texture size 640x480.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController: Scene configured for video.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]ARController::initAR() called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Marker 0 now visible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+CaraDeAgua (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Marker 6 now visible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+CaraDeFuego (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Marker 6 no longer visible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Marker 0 no longer visible
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController: Stopping AR.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Closing ARToolKit video.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 942.
+Total: 0.547900 ms (FindLiveObjects: 0.096200 ms CreateObjectMapping: 0.048900 ms MarkObjects: 0.385800 ms  DeleteObjects: 0.016100 ms)
+
+ARController (native): [info]Removed marker (UID=1), now 6 markers loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Removed marker (UID=0), now 5 markers loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Removed marker (UID=6), now 4 markers loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Removed marker (UID=5), now 3 markers loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Removed marker (UID=4), now 2 markers loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Removed marker (UID=3), now 1 markers loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Last square marker removed; disabling square marker detection.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController (native): [info]Removed marker (UID=2), now 0 markers loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ARController: Shutting down ARToolKit
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
